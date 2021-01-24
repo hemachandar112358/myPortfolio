@@ -3,12 +3,15 @@ import styled from 'styled-components';
 import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
-import Placeholder from '../images/placeholder.png';
+import Bank from '../images/bankBalance.jpg';
+import DrumKit from '../images/drumKit.jpg';
+import JokesNQuotes from '../images/placeholder.png';
+import MoviesInfo from '../images/moviesInfo.jpg';
+import Weather from '../images/weather.jpg';
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
 import Colors from '../Colors';
-import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { darken } from 'polished';
 
@@ -144,41 +147,42 @@ class Homepage extends React.Component {
       <HomepageWrapper>
         <Layout theme="white" bigFooter openContactPopup={this.openContactPopup}>
           <AboveFold>
-            <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Name Surname" className="avatar" />
             <t.H1 primary align="center">
-              Name Surname
+              Hello, I'm Hemachandar
             </t.H1>
-            <t.LargeP align="center" max45>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </t.LargeP>
-            <HireMe large onClick={this.openContactPopup} book>
-              Hire me
-            </HireMe>
+            <t.H3>Aspiring Web Developer</t.H3>
+            <t.P align="center" max45>
+              Scroll below to take a glance at projects I have created
+            </t.P>
+            <t.P align="center" max45>
+              or
+            </t.P>
+            <t.P align="center" max45>
+              Click About Me to know more.
+            </t.P>
           </AboveFold>
           <Content>
-            <t.H2 primary align="center" bold>
-              Lorem ipsum
-            </t.H2>
-            <t.P align="center" max70 className="who-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </t.P>
             <t.H2 primary align="center" bold className="portfolio">
-              Portfolio
+              Projects
             </t.H2>
           </Content>
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={Bank} alt="Placeholder title" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
+                <t.H2 bold>Balance Check website</t.H2>
+                <t.P>Created with React, Redux & Firebase</t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href="https://balancefirebase.netlify.app"
+                >
+                  DEMO
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
@@ -186,33 +190,41 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
+                <t.H2 bold>Movies Info Website</t.H2>
+                <t.P>Created with React, Redux & OMDB API</t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href="https://reduxmovieseriesinfo.netlify.app"
+                >
+                  DEMO
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={MoviesInfo} alt="Placeholder title" />
               </DivWrapper>
             </BlockContent>
           </Block>
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={DrumKit} alt="Placeholder title" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
+                <t.H2 bold>Drum Kit</t.H2>
+                <t.P>Created with React</t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href="https://react-drums-kit.netlify.app"
+                >
+                  DEMO
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
@@ -220,25 +232,27 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
+                <t.H2 bold>Weather Check Website</t.H2>
+                <t.P>Created with React & OpenWeatherAPI</t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href="https://react-basicweather-app.netlify.app"
+                >
+                  DEMO
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={Weather} alt="Placeholder title" />
               </DivWrapper>
             </BlockContent>
           </Block>
           <WorkWithMe>
-            <t.H1 green>Get in touch with me</t.H1>
-            <t.LargeP>
-              Fancy working with me? Contact me for more info!{' '}
-            </t.LargeP>
+            <t.H3 green>Get in touch with me</t.H3>
+
             <HireMe onClick={this.openContactPopup} book>
               Contact me
             </HireMe>

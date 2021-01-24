@@ -18,9 +18,7 @@ const Copyright = styled.p`
 const Footer = ({ big, medium }) => (
   <FooterWrapper {...big && { big }} {...medium && { medium }}>
     <Content>
-      <Copyright white align="center">
-        © Name Surname 2019. All rights reserved.
-      </Copyright>
+      <Copyright white align="center" />
     </Content>
   </FooterWrapper>
 );

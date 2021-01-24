@@ -83,16 +83,22 @@ class AboutMe extends React.Component {
       <AboutMeWrapper>
         <Layout theme="white" openContactPopup={this.openContactPopup}>
           <AboveFold>
-            <t.H1 green align="center">
-              Name Surname - Lorem ipsum
-            </t.H1>
+            <t.H2 green align="center">
+              Nice to Meet you.
+            </t.H2>
             <t.LargeP align="center" max70>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I am a Self taught web developer based in Hyderabad. I enjoy working with complex problems and always
+              strive to give my best. I love working with JavaScript and currently looking for job opportunities.
+              <t.P>
+                {' '}
+                If you like what you see contact me at my mail (hemachandarpalaparthi@gmail.com) or send a message on
+                LinkedIn (Link in Contact Page)
+              </t.P>
             </t.LargeP>
           </AboveFold>
-          <Content>
+          {/* <Content>
             <Img fluid={data.avatarAbout.childImageSharp.fluid} alt="Name Surname" className="avatar" />
-          </Content>
+          </Content> */}
         </Layout>
         <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />
       </AboutMeWrapper>

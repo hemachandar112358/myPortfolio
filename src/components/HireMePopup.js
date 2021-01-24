@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import { lighten, darken } from 'polished';
 import * as t from '../Typography';
 import Colors from '../Colors';
-import LN from '../images/ln.png';
 import Close from '../images/close-popup-grey.png';
 import { media } from '../MediaQueries';
 import Helmet from 'react-helmet';
+import LN from '../images/ln.png';
 
 const HireMePopupWrapper = styled.div`
   position: fixed;
@@ -59,10 +59,7 @@ const Burger = styled.div`
   z-index: 2;
   color: ${props => props.scrolled && Colors.darkest};
   &:hover {
-    ${props =>
-      props.scrolled || props.theme === 'white'
-        ? lighten(0.3, Colors.darkest)
-        : darken(0.1, Colors.white)};
+    ${props => (props.scrolled || props.theme === 'white' ? lighten(0.3, Colors.darkest) : darken(0.1, Colors.white))};
     cursor: pointer;
     opacity: 0.9;
   }
@@ -90,10 +87,8 @@ class HireMePopup extends React.Component {
             <img alt="Close popup" src={Close} />
           </Burger>
           <t.H3>Contact me on</t.H3>
-          <Link primary bold
-            target="_blank"
-            href="https://www.linkedin.com/">
-            <img src={LN} alt="Your Linkedin profile" />
+          <Link primary bold target="_blank" href="https://www.linkedin.com/in/hemachandar-p">
+            <img src={LN} alt="Linkedin profile" />
           </Link>
         </ContentWrapper>
       </HireMePopupWrapper>
