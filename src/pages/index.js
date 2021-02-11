@@ -173,6 +173,17 @@ class Homepage extends React.Component {
               </DivWrapper>
               <DivWrapper>
                 <t.H2 bold>Balance Check website</t.H2>
+                <t.P>
+                  <u>What Does it do:</u>
+                  <br />
+                  Realtime application in which user can login, update details, add a new user & delete a user.
+                </t.P>
+                <t.P>
+                  <u>What I have learned:</u>
+                  <br /> Firebase Authentication, Firestore CRUD operations, Handling form data and persisting to
+                  Firestore, Firebase Redux{' '}
+                </t.P>
+
                 <t.P>Created with React, Redux & Firebase</t.P>
                 <LinkButton
                   primary
@@ -191,6 +202,15 @@ class Homepage extends React.Component {
             <BlockContent>
               <DivWrapper>
                 <t.H2 bold>Movies Info Website</t.H2>
+                <t.P>
+                  <u>What Does it do:</u>
+                  <br />
+                  Search either movies or TV Series to get their details and view them on IMDB
+                </t.P>
+                <t.P>
+                  <u>What I have learned:</u>
+                  <br /> Consuming a REST API, Redux Implementation
+                </t.P>
                 <t.P>Created with React, Redux & OMDB API</t.P>
                 <LinkButton
                   primary
@@ -215,6 +235,15 @@ class Homepage extends React.Component {
               </DivWrapper>
               <DivWrapper>
                 <t.H2 bold>Drum Kit</t.H2>
+                <t.P>
+                  <u>What Does it do:</u>
+                  <br />
+                  Drum Kit which plays a sound upon clicking the keys
+                </t.P>
+                <t.P>
+                  <u>What I have learned:</u>
+                  <br /> Usage of React Ref, Handling audio elements
+                </t.P>
                 <t.P>Created with React</t.P>
                 <LinkButton
                   primary
@@ -233,6 +262,15 @@ class Homepage extends React.Component {
             <BlockContent>
               <DivWrapper>
                 <t.H2 bold>Weather Check Website</t.H2>
+                <t.P>
+                  <u>What Does it do:</u>
+                  <br />
+                  Displays the weather of location searched. Searches can be made by name or pin code
+                </t.P>
+                <t.P>
+                  <u>What I have learned:</u>
+                  <br /> Handling REST data, Handling wrong inputs
+                </t.P>
                 <t.P>Created with React & OpenWeatherAPI</t.P>
                 <LinkButton
                   primary
