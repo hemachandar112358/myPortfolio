@@ -87,8 +87,7 @@ class AboutMe extends React.Component {
               Nice to Meet you.
             </t.H2>
             <t.LargeP align="center" max70>
-              I am a Self taught web developer based in Hyderabad. I enjoy working with complex problems and always
-              strive to give my best. I love working with JavaScript and currently looking for job opportunities.
+              I enjoy working with complex problems and always strive to give my best. I love working with JavaScript and currently looking for job opportunities.
               <t.P>
                 {' '}
                 If you like what you see contact me at my mail (hemachandarpalaparthi@gmail.com) or send a message on
